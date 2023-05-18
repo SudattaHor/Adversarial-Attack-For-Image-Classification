@@ -1,5 +1,15 @@
 # chadversaries
 
+## Instructions
+
+Navigate to the `main/` directory.
+
+- Running `python cnn.py` will train the CNN model on the MNIST dataset.
+- Running `python l2attack.py <source> <target>` will generate a targeted attack. (For example, `python l2attack.py 7 9` will take an image with true label 7, and generate an image that the classifier predicts as 9)
+- Running `python plot.py` will plot the 10x10 figure.
+- `test.ipynb` is helpful for visualization and testing.
+- Running `bash attack_source.sh <source>` will generate an attack for every possible target.
+
 ## References
 
 Below is an algorithm that generates adversial examples. It is one of the recent powerful ones that is used as a benchmark to test a model's robustness.
